@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0; margin: 0;}
+        ul, li {list-style: none;}
+
+        header, body{
+            background-image: url(img/images/bg.png);    
+        }
+        header{
+            text-align: center;
+        }
+        .first{
+            padding: 20px;
+        }
+        .applestore{
+            size: 50px;
+        }
+        .menu{
+            background-color: black;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .menutext{
+            color: aliceblue;
+            text-decoration: none;
+            float: center;
+        }
+        .menu li {
+            width: 50px;
+            display: inline;
+            padding: 20px;
+            height: 100%;
+            
+        }
+        .menutext:hover{
+            background-color: gray;
+        }
+        .whiteline{
+            text-align: center;
+            background-color: white;
+        }
+        .whiteline li{
+            text-decoration: none;
+            margin: 40px 0px;
+            display: inline-block;
+        }
+        .sticky{
+            text-decoration: none;
+            position: sticky;
+            background-color: white;
+            text-align: center;
+        }
+        .sticky li{
+            padding: 10px;
+            display: inline;
+        }
+        .top{
+            background-color: brown;
+            text-align: center;
+            z-index: 30;
+            top: 5;
+            right: 5;
+            width: 20px;
+            height: 20px;
+            font-size: 5px;
+        }
+        .ipad{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<header>
+    <div class="first">
+        <img class="applestore" src="img/images/logo.jpg" alt="apple">
+    </div>
+
+    <ul class="menu">
+        <li><a href="#" class="menutext">메뉴1</a></li>
+        <li><a href="#" class="menutext">메뉴2</a></li>
+        <li><a href="#" class="menutext">메뉴3</a></li>
+        <li><a href="#" class="menutext">메뉴4</a></li>
+    </ul>
+
+    <div class="top">
+        <a href="#">TOP</a>
+    </div>
+
+</header>
+
+<body>
+
+    <div class="whiteline">
+        <li>
+            <img src="img/images/item01.png" alt="1"><br>
+            iPhone(디스플레이 or 플롯)
+        </li>
+        <li>
+            <img src="img/images/item02.png" alt="2"><br>
+            iPod
+        </li>
+            <li>
+                 <img src="img/images/item03.png" alt="3"><br>
+                 iPad
+            </li>
+            <li>
+                 <img src="img/images/item04.png" alt="4"><br>
+                 iMac
+            </li>
+        </div>
+    <div class="sticky">
+        <ul>
+            <li>아이콘</li>
+            <li>아이콘</li>
+            <li>아이콘</li>
+            <li>이거는 스티키</li>
+        </ul>
+    </div>
+    <img class="ipad" src="img/images/ipad.jpg" alt="cen">
+</body>
+</html>

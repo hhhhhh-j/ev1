@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            border: 1px solid #777;    
+            padding-left: 100px; 
+            padding-right: 15px;  
+            padding-top: 20px;
+            position: relative;
+            width: 50%;
+            height: 300px;           
+            margin-left: 25%;
+            
+        }
+        .image{
+            z-index: 10;
+            top: 20;
+            left: 0;
+            position: absolute;
+            size: 30px;
+            overflow: hidden;
+        }
+        img{ 
+            block-size: 100px;
+            margin-left: 10px;
+            
+        }
+        .text1out{
+            height: 80%;
+
+        }
+        .text1{
+            border: 1px solid #777;
+            padding-top: 5px;
+            padding-left: 5px;
+            height: 95%;
+            width: 100%;
+            box-sizing: border-box;
+
+        }
+        .text2{
+            float: left;
+        }
+        .access{
+            float: right;
+        }
+        button{
+            float: right;
+        }
+        input{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="image">
+             <img src="img/230px.png"  alt="t"> 
+        </div>
+        <div class="text1out">
+            <textarea class="text1">힌트: 이미지 영역을  position:absolute를 사용합니다
+            </textarea>
+        </div>
+        <div class="text2">
+            <input type="text">
+            <input type="text">
+        </div>
+        <div class="access">
+            <button>등록하기</button>
+        </div>
+
+    </div>
+</body>
+</html>
