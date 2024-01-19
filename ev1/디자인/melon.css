@@ -1,0 +1,46 @@
+*{margin:0; padding: 0;}
+ul, li, ol, dd, dl{list-style: none;}
+img{max-width: 100%; height: auto;}
+/*이것뿐만 아니라 최기화 선언이 더 들어갈 수 있음*/
+
+#header .wrap {border-top: 3px solid #00d344;}
+#header .wrap .top {width: 1008px; margin: 0 auto;}
+
+#header .top {overflow: hidden;}
+#header .top .left {float: left; padding: 11px 7px; font-size: 12px; color: #999999;}
+#header .top .right {float: right;}
+
+#header .top .right li{display: inline-block; border-left: 1px solid #999999; margin-top: 11px;}
+#header .top .right li a{display: block;  padding: 0 7px; font-size: 12px; color: #999999; text-decoration: none;  font-weight: bold;}
+#header .top .right li:nth-child(1){border: none;}
+
+#header .wrap-mid{border-top: 1px solid #999999;}
+#header .wrap-mid .mid{width: 1080px; margin: 0 auto; overflow: hidden;}
+#header .wrap-mid .mid .left {float: left;}
+#header .wrap-mid .mid fieldset{
+    float: left; 
+    margin: 36px 0 0 11px; 
+    height: 40px; 
+    width: 330px; 
+    background-image: url(img_melon/melon_search.png); 
+    border: none;
+    overflow: hidden;}
+#header .wrap-mid .mid .right{float: right; margin-top: 10px;} 
+#header .wrap-mid fieldset input {float: left; margin: 7px 0 0 18px; width: 260px; height: 25px; border: none;}
+#header .wrap-mid fieldset button{display: inline-block; float: right; width: 45px; height: 40px; border: none; cursor: pointer;}
+
+#header .wrap-bot{border-bottom: 1px solid #999999;}
+#header .wrap-bot .bot{overflow: hidden; width: 1008px; margin: 0 auto;}
+#header .wrap-bot .left{float: left;}
+#header .wrap-bot .right{float: right;}
+
+#header .wrap-bot .left li,
+#header .wrap-bot .right li{display: inline-block;}
+
+#header .wrap-bot .left li a,
+#header .wrap-bot .right li a
+{display: block; color: black; font-weight: 900; padding: 13px 7px; text-decoration: none;}
+
+#header .wrap-bot .left li a:hover{color: #00d344;}
+
+

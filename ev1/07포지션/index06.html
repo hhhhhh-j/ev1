@@ -61,16 +61,34 @@
         }
         .top{
             background-color: brown;
+            position: fixed;
             text-align: center;
             z-index: 30;
-            top: 5;
-            right: 5;
-            width: 20px;
-            height: 20px;
-            font-size: 5px;
+            top: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
         }
-        .ipad{
+        .c{
             text-align: center;
+        }
+        .left{
+            float: left;
+            top: 0;
+
+        }
+        .right{
+            float: right;
+            top: 0;
+        }
+        section{
+            position: relative;
+        }
+        .aside{
+            position: absolute;
+            z-index: 30;
+            display: block;
         }
     </style>
 </head>
@@ -121,6 +139,23 @@
             <li>이거는 스티키</li>
         </ul>
     </div>
-    <img class="ipad" src="img/images/ipad.jpg" alt="cen">
+    
+    <section>
+        <div class="c">
+            <img class="ipad" src="img/images/ipad.jpg" alt="cen"> 
+        </div>
+        <div>  
+            <aside class="left">
+                <img src="img/images/side01.png" alt="leftone"><br>
+                <img src="img/images/side02.png" alt="lefttwo">
+                <p>이거는 포지션</p>
+            </aside>
+            <aside class="right">
+                <img src="img/images/side03.png" alt="rightone"><br>
+                <img src="img/images/side04.png" alt="righttwo">
+                <p>이거는 포지션</p>
+            </aside>
+        </div>
+    </section>
 </body>
 </html>
