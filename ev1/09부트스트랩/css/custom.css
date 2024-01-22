@@ -1,0 +1,8 @@
+/*헤더*/
+.navbar-inverse{
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+}
+.navbar{
+    border-radius: 0;
+}

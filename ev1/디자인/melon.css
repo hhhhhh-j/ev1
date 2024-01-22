@@ -43,4 +43,57 @@ img{max-width: 100%; height: auto;}
 
 #header .wrap-bot .left li a:hover{color: #00d344;}
 
-
+/*=========================*/
+footer{margin-top: 50px;}
+.foot-wrap{
+    border-top: 1px solid #000;
+}
+.foot-wrap .foot-top{
+    margin: 0 auto;
+    width: 1008px;
+    overflow: hidden;
+}
+.foot-wrap .foot-top>ul{
+    float: right;
+}
+.foot-wrap .foot-top>ul >li{
+    display: inline-block;
+}
+.foot-wrap .foot-top>ul >li >a{
+    display: block;
+    color: #777;
+    text-decoration: none;
+    padding: 10px 3px;
+    font-size: 13px;
+    font-weight: 900;
+}
+.foot-wrap2{border-top: 1px solid #999999;}
+.foot-wrap2 .foot-mid{
+    width: 1008px;
+    margin: 0 auto;
+}
+.foot-wrap2 .foot-mid >ul{
+    margin-top: 10px;
+}
+.foot-wrap2 .foot-mid >ul >li{
+    display: inline-block;
+}
+.foot-wrap2 .foot-mid >ul >li> a{
+    display: block;
+    font-size: 11px;
+    color: #999999;
+    text-decoration: none;
+    padding-right: 6px;
+    border-right: 1px solid #999999;
+}
+.foot-wrap2 .foot-mid .bottom{
+    margin: 20px 0 40px 0;
+}
+.foot-wrap2 .foot-mid .bottom strong{
+    font-size: 13px;
+    font-weight: 900;
+}
+.foot-wrap2 .foot-mid .bottom span{
+    font-size: 11px;
+    color: #999999;
+}

@@ -1,0 +1,39 @@
+/*웹폰트*/
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+ul ,li, ol, dd, dl{ 
+    list-style: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+html, body{
+    /*웹폰트*/
+    font-family: 'Noto Serif KR', serif;
+    width: 100%;
+    min-width: 320px;
+}
+/* 구글, 사파리, 파이어폭스의 기본 디자인을 지우고 커스터마이징한다 */
+input[type=checkbox],input[type=radio]{ 
+    -webkit-appearance: none; /*구글, 사파리*/
+    -moz-appearance: none; /*파이어폭스*/
+    appearance: none; /*나머지 브라우져의 기본 디자인을 지운다*/
+
+    width: 20px;
+    height: 20px;
+    border: 1px solid #3498db;
+    cursor: pointer;
+
+}
+input[type=checkbox]:checked,
+input[type=radio]:checked{
+    outline: none;
+    background-color: #3498db;
+}
