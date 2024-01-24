@@ -1,0 +1,118 @@
+/*헤더*/
+.btn{border-radius: 0px;}
+.form-control{border-radius: 0px;}
+.form-control:focus{
+    border-color: #ccc;
+    box-shadow: none;
+}
+.navbar-inverse{
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+}
+.navbar{
+    border-radius: 0;
+}
+.nav-brand{
+    padding: 10px 10px;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+    background-color: black;
+}
+
+/*========슬라이드===========*/
+.carousel-control
+
+/* =========본문========= */
+.prod-section{
+    padding: 10px;
+}
+.prod-list{
+    border: 1px solid #999999;
+    padding: 10px;
+}
+.prod-list .prod-link{
+    border: 1px solid #999999;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+/* li태그 중 class 속성이 col-이 포함된 태그 */
+.prod-list >li[class*=col-]{
+    padding: 5px;
+}
+.prod-list .prod-link > .arrow{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 70px;
+    padding: 5px 10px;
+    background-color: #e3e3e3;
+    color: aliceblue;
+    font-size: 13px;
+}
+.prod-list .prod-link > .hover{
+    background-color: #50a0ff;
+    opacity: 0;
+}
+/* 호버시 보더 */
+.prod-list .prod-link:hover{
+    border-color: #50a0ff;
+}
+/* 호버시 아이콘 투명도 */
+.prod-list .prod-link:hover > .hover{
+    opacity: 1;
+}
+/* ======================== */
+
+.container .row div{
+    width: 20%;
+}
+
+.box{
+    border: 1px solid #e3e3e3;
+}
+.box :hover{
+   opacity: 0.5;
+   text-decoration: none;
+   
+}
+a{
+    color: black;
+}
+/* ===================나이키================== */
+
+
+h3{
+    margin-left: 19%;
+    font-weight: bold;
+}
+.container .row .contentout{
+    overflow: hidden;
+}
+
+.container .row .contentout:hover{
+    /* 호버하면 컬러이미지 떠야함 */
+
+}
+.content .text{
+    overflow: hidden;
+    float: left;
+}
+.content span{
+    display: block;
+    color: #999999;
+}
+.content strong{
+
+    float: right;
+}
+.content .color{
+    overflow: hidden;
+}
+.content li{
+    float: left;
+}
+.content li{
+    display: block;
+}
