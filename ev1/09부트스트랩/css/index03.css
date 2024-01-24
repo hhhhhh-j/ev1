@@ -1,116 +1,147 @@
-/*헤더*/
-.btn{border-radius: 0px;}
-.form-control{border-radius: 0px;}
-.form-control:focus{
+/* ====================헤더=========================== */
+.btn {border-radius: 0px;}
+.form-control {border-radius: 0px;}
+.form-control:focus {
     border-color: #ccc;
     box-shadow: none;
 }
-.navbar-inverse{
-    background-color: cornflowerblue;
-    border-color: cornflowerblue;
+/* =================================================== */
+/* 헤더 픽스 */
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
 }
-.navbar{
+
+.navbar-inverse {
+    background-color: #263238;
+    border-color: #263238;
+}
+.navbar {
     border-radius: 0;
+    margin-bottom: 0;
 }
-.nav-brand{
+.navbar-brand {
     padding: 10px 10px;
 }
-.navbar-inverse .navbar-nav>li>a:hover{
-    background-color: black;
+/* 호버시 백그라운드색상 */
+.navbar-inverse .navbar-nav>li>a:hover {
+    background-color: #304047;
+}
+/* 드랍다운 메뉴 선택될때 백그라운드색 */
+.navbar-inverse .navbar-nav>.open>a, 
+.navbar-inverse .navbar-nav>.open>a:focus, 
+.navbar-inverse .navbar-nav>.open>a:hover{
+    background-color: #304047;
+}
+/* ============슬라이드============= */
+#main-slide {
+    margin-top: 50px;
 }
 
-/*========슬라이드===========*/
-.carousel-control
-
-/* =========본문========= */
-.prod-section{
-    padding: 10px;
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none;
 }
-.prod-list{
+
+/* ============본문================= */
+.prod-section {
+    margin-top: 50px;
+}
+.prod-list {
     border: 1px solid #999999;
-    padding: 10px;
+    padding: 5px;
 }
-.prod-list .prod-link{
+.prod-list .prod-link {
     border: 1px solid #999999;
     display: block;
     text-align: center;
-    padding: 10px;
     position: relative;
+
 }
-/* li태그 중 class 속성이 col-이 포함된 태그 */
-.prod-list >li[class*=col-]{
+/* li태그 중 class 속성이 col- 포함된 태그 */
+.prod-list > li[class*=col-] {
     padding: 5px;
 }
-.prod-list .prod-link > .arrow{
+.prod-list .prod-link > .arrow {
     position: absolute;
     left: 10px;
     bottom: 10px;
-    width: 70px;
-    padding: 5px 10px;
+    padding: 10px 15px;
     background-color: #e3e3e3;
-    color: aliceblue;
+    color: #fff;
     font-size: 13px;
 }
-.prod-list .prod-link > .hover{
+.prod-list .prod-link > .hover {
     background-color: #50a0ff;
     opacity: 0;
 }
 /* 호버시 보더 */
-.prod-list .prod-link:hover{
+.prod-list .prod-link:hover {
     border-color: #50a0ff;
 }
-/* 호버시 아이콘 투명도 */
-.prod-list .prod-link:hover > .hover{
+/* 호버시 아이콘투명도 */
+.prod-list .prod-link:hover > .hover {
     opacity: 1;
 }
-/* ======================== */
 
-.container .row div{
-    width: 20%;
-}
-
-.box{
+/* ============블로그 스타일=========== */
+.blog-inner {
     border: 1px solid #e3e3e3;
+    text-align: center;
+    position: relative;
 }
-.box :hover{
-   opacity: 0.5;
-   text-decoration: none;
-   
-}
-a{
-    color: black;
-}
-/* ===================나이키================== */
+.blog-content{padding: 20px;}
+.blog-content > p {text-align: left; height: 70px;}
+
+.blog-price {overflow: hidden;}
+.blog-price ul {float: left;}
+.blog-price ul li {display: inline-block; color: #fff000; font-size: 20px;}
+.blog-price strong {float: right;}
 
 
-h3{
-    margin-left: 19%;
-    font-weight: bold;
+.blog-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0, 0.7);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    opacity: 0; /* 투명도 */
+    cursor: pointer;
 }
-.container .row .contentout{
-    overflow: hidden;
+.blog-hover > a {
+    color: #fff;
+    font-size: 20px;
+}
+.blog-inner:hover > .blog-hover {
+    opacity: 1;
 }
 
-.container .row .contentout:hover{
-    /* 호버하면 컬러이미지 떠야함 */
+@media(min-width: 1200px) {/* 디바이스 1200이상일때 */
+    .blog-style.col-lg-2 {
+        width: 20%;
+    }
+}
 
-}
-.content .text{
-    overflow: hidden;
-    float: left;
-}
-.content span{
-    display: block;
-    color: #999999;
-}
-.content .price{
-    float: right;
-}
-.content .color{
-    overflow: hidden;
-    margin-top: -30px;
+/* =============상품 그리드================ */
+.prod-nike .prod-content {overflow: hidden; padding: 15px 0;}
+.prod-nike .prod-content .left {float: left;}
+.prod-nike .prod-content .right {float: right;}
+
+.prod-nike .prod-hover {
+    overflow: hidden; 
+    margin-top: -44px; 
     opacity: 0;
+
+    transition: all 0.2s ease-in-out;
 }
-.content li{
-    float: left;
+.prod-nike .prod-hover > li {float: left;}
+/* 호버처리 */
+.prod-nike:hover > .prod-hover {
+    opacity: 1;
 }
+
